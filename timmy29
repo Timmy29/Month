@@ -1,0 +1,16 @@
+menu=True
+
+while menu:
+    try:
+        mydict={1:"January", 2: "February", 3: "March", 4: "April", 5: "May", 6: "June", 7: "July", 8: "August", 9: "September", 10: "October", 11: "November", 12: "December"}
+        num=int(input("Enter the number of the month here:"))
+        print(mydict[num])
+    except ValueError:
+        print("No valid numbers. Enter a number! Don't do your own thing here!!")
+    except KeyError:
+        print("Only positive values!!")
+    menu
+    key=str(input("Press x to exit program"))
+    if key == 'x':
+        exit(0)
+    
